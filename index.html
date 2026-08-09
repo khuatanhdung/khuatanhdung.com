@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Khuất Anh Dũng — BĐS Nha Trang &amp; DŨNG URAA</title>
+<meta name="description" content="Khuất Anh Dũng — Top 100 Nhà môi giới BĐS tiêu biểu Việt Nam 2026 (VARS), chuyên viên BĐS đầu tư tại New City Group Nha Trang, chủ nhà hàng bia hơi Hà Nội DŨNG URAA. Sống tử tế, kiếm tiền hạnh phúc, cho đi giá trị.">
+<meta property="og:title" content="Khuất Anh Dũng — khuatanhdung.com">
+<meta property="og:description" content="Người bạn đồng hành bất động sản Nha Trang — Top 100 Môi giới BĐS Việt Nam 2026 (VARS), chủ nhà hàng DŨNG URAA. Sống thật, làm thật.">
+<meta property="og:image" content="https://khuatanhdung.com/media/01-chan-dung.jpg">
+<link rel="canonical" href="https://khuatanhdung.com/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Be+Vietnam+Pro:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    /* Bảng màu nhận diện "Chữ Xanh + Nút Cam" — chốt 21/7/2026 */
+    --cream:#FAFCFF;           /* nền chính: trắng ánh xanh */
+    --cream-warm:#F7F1E6;      /* nền khu DŨNG URAA: cát ấm */
+    --moss:#0A4D8C;            /* xanh cobalt — màu tiêu đề & thương hiệu */
+    --moss-tint:#E3EEF9;
+    --terracotta:#EB5E28;      /* cam san hô — nút bấm & điểm nhấn */
+    --terracotta-tint:#FDE4D8;
+    --ink:#16283B;             /* chữ thân bài: xanh đen */
+    --warm-gray:#6C7C8C;
+    --restaurant:#D2691E;
+    --restaurant-tint:#F7E4D3;
+    --line:rgba(22,40,59,0.12);
+    --radius-soft:22px;
+    --radius-card:16px;
+    --maxw:1120px;
+    --section-pad: clamp(56px, 9vw, 120px);
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *{animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important; scroll-behavior:auto !important;}
+  }
+
+  body{
+    margin:0;
+    background:var(--cream);
+    color:var(--ink);
+    font-family:'Be Vietnam Pro', system-ui, sans-serif;
+    font-size:16px;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  h1,h2,h3,.display{
+    font-family:'Fraunces', serif;
+    font-weight:600;
+    line-height:1.12;
+    letter-spacing:-0.01em;
+    margin:0;
+    color:var(--moss);
+  }
+
+  a{color:inherit;}
+  img{max-width:100%; display:block;}
+  .container{max-width:var(--maxw); margin:0 auto; padding-left:20px; padding-right:20px;}
+
+  :focus-visible{
+    outline:3px solid var(--terracotta);
+    outline-offset:3px;
+    border-radius:4px;
+  }
+
+  .eyebrow{
+    font-family:'JetBrains Mono', monospace;
+    font-size:12.5px;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--warm-gray);
+  }
+
+  .data-tag{
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    font-family:'JetBrains Mono', monospace;
+    font-size:12px;
+    letter-spacing:0.02em;
+    color:var(--terracotta);
+    background:var(--terracotta-tint);
+    border:1px dashed var(--terracotta);
+    border-radius:999px;
+    padding:4px 12px;
+    margin:4px 6px 4px 0;
+  }
+  .restaurant .data-tag{ color:var(--restaurant); background:var(--restaurant-tint); border-color:var(--restaurant); }
+
+  /* ---------- NAV ---------- */
+  header.site-nav{
+    position:sticky; top:0; z-index:50;
+    background:rgba(250,252,255,0.92);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav-inner{
+    max-width:var(--maxw); margin:0 auto; padding:14px 20px;
+    display:flex; align-items:center; justify-content:space-between;
+  }
+  .logo{
+    display:flex; align-items:center; gap:10px;
+    font-family:'Fraunces', serif; font-weight:600; font-size:18px;
+    text-decoration:none;
+  }
+  .logo-mark{
+    width:38px; height:38px; border-radius:50%;
+    background:var(--moss); color:var(--cream);
+    display:flex; align-items:center; justify-content:center;
+    font-family:'JetBrains Mono', monospace; font-size:13px; letter-spacing:0.02em;
+    flex-shrink:0;
+  }
+  nav.links{display:none; gap:28px; font-size:14.5px; font-weight:500;}
+  nav.links a{text-decoration:none; color:var(--ink); position:relative; padding:6px 0;}
+  nav.links a:after{
+    content:""; position:absolute; left:0; bottom:0; height:2px; width:0;
+    background:var(--terracotta); transition:width .2s ease;
+  }
+  nav.links a:hover:after{width:100%;}
+  .nav-cta{
+    display:none;
+    background:var(--terracotta); color:var(--cream);
+    padding:9px 18px; border-radius:999px; font-weight:600; font-size:14px;
+    text-decoration:none; white-space:nowrap;
+  }
+  .menu-btn{
+    background:none; border:1px solid var(--line); border-radius:10px;
+    width:42px; height:42px; display:flex; align-items:center; justify-content:center;
+    cursor:pointer;
+  }
+  .menu-btn span, .menu-btn span:before, .menu-btn span:after{
+    content:""; display:block; width:18px; height:2px; background:var(--ink);
+    position:relative; transition:transform .2s ease, opacity .2s ease;
+  }
+  .menu-btn span:before{position:absolute; top:-6px;}
+  .menu-btn span:after{position:absolute; top:6px;}
+  .mobile-panel{
+    display:none; flex-direction:column; gap:2px;
+    background:var(--cream); border-bottom:1px solid var(--line);
+    padding:8px 20px 18px;
+  }
+  .mobile-panel.open{display:flex;}
+  .mobile-panel a{
+    padding:12px 4px; text-decoration:none; color:var(--ink); font-size:15.5px;
+    border-bottom:1px solid var(--line);
+  }
+  .mobile-panel a:last-child{border-bottom:none;}
+
+  @media (min-width:860px){
+    nav.links{display:flex;}
+    .nav-cta{display:inline-block;}
+    .menu-btn{display:none;}
+  }
+
+  /* ---------- Section shell ---------- */
+  section{padding:var(--section-pad) 0;}
+  .section-head{max-width:640px; margin-bottom:44px;}
+  .section-head h2{font-size:clamp(28px,4vw,40px); margin-top:10px;}
+  .section-head p.lede{font-size:17px; color:var(--warm-gray); margin-top:14px;}
+
+  /* ---------- Divider motif (núi + biển) ---------- */
+  .motif{display:block; width:100%; height:auto; color:var(--moss); opacity:0.55;}
+  .restaurant-zone .motif{color:var(--restaurant);}
+
+  /* ---------- HERO ---------- */
+  .hero{
+    padding-top:clamp(48px,9vw,96px);
+    position:relative; overflow:hidden;
+  }
+  .hero .container{
+    display:grid; gap:36px;
+  }
+  .hero-badges{display:flex; flex-wrap:wrap; gap:8px; margin:20px 0 28px;}
+  .badge{
+    font-size:12.5px; font-weight:600; letter-spacing:0.02em;
+    background:var(--moss-tint); color:var(--moss);
+    border-radius:999px; padding:7px 14px;
+  }
+  .hero h1{font-size:clamp(32px,6vw,54px); max-width:15ch;}
+  .hero .sub{font-size:clamp(16px,2.2vw,19px); color:var(--ink); max-width:52ch; margin-top:18px; opacity:0.85;}
+  .hero-ctas{display:flex; flex-wrap:wrap; gap:14px; margin-top:30px;}
+  .btn{
+    display:inline-flex; align-items:center; gap:8px;
+    padding:14px 26px; border-radius:999px; font-weight:700; font-size:15px;
+    text-decoration:none; border:1px solid transparent; cursor:pointer;
+    transition:transform .15s ease, box-shadow .15s ease;
+  }
+  .btn:hover{transform:translateY(-2px);}
+  .btn-primary{background:var(--terracotta); color:var(--cream); box-shadow:0 8px 20px -8px rgba(201,97,47,0.6);}
+  .btn-outline{background:transparent; color:var(--moss); border-color:var(--moss);}
+  .restaurant-zone .btn-primary{background:var(--restaurant); box-shadow:0 8px 20px -8px rgba(210,105,30,0.6);}
+  .restaurant-zone .btn-outline{color:var(--restaurant); border-color:var(--restaurant);}
+
+  .media-slot{
+    border:1.5px dashed var(--warm-gray);
+    border-radius:var(--radius-soft);
+    background:rgba(140,133,119,0.06);
+    padding:28px 22px;
+    display:flex; flex-direction:column; gap:10px; align-items:flex-start;
+    min-height:180px; justify-content:center;
+  }
+  .media-slot .cam{color:var(--warm-gray);}
+  .media-slot b{font-size:14.5px; font-family:'JetBrains Mono', monospace; font-weight:500; color:var(--ink);}
+  .media-slot span{font-size:13.5px; color:var(--warm-gray); line-height:1.5;}
+
+  .video-embed{
+    border-radius:var(--radius-soft);
+    overflow:hidden;
+    aspect-ratio:16/9;
+    background:#000;
+  }
+  .video-embed iframe{width:100%; height:100%; border:0; display:block;}
+  .restaurant-zone .video-embed{border-radius:28px;}
+
+  .hero-media{aspect-ratio:4/3;}
+
+  @media (min-width:860px){
+    .hero .container{grid-template-columns:1.1fr 0.9fr; align-items:center;}
+  }
+
+  /* ---------- JOURNEY (timeline) ---------- */
+  .journey{background:var(--cream);}
+  .timeline{border-left:2px solid var(--line); padding-left:0; margin:0; list-style:none;}
+  .t-item{position:relative; padding:0 0 40px 34px; margin-left:-2px; border-left:2px solid var(--moss); }
+  .t-item:last-child{padding-bottom:0;}
+  .t-num{
+    position:absolute; left:-19px; top:0;
+    width:36px; height:36px; border-radius:50%;
+    background:var(--moss); color:var(--cream);
+    font-family:'JetBrains Mono', monospace; font-size:13px;
+    display:flex; align-items:center; justify-content:center; font-weight:500;
+  }
+  .t-item h3{font-size:20px; margin-bottom:8px;}
+  .t-item p{color:var(--ink); opacity:0.85; font-size:15.5px; max-width:60ch;}
+  .story-body{margin-top:48px; max-width:70ch; font-size:16.5px;}
+  .story-body p{margin:0 0 20px;}
+  .story-body strong{color:var(--moss);}
+  .story-transition{
+    margin-top:32px; font-family:'Fraunces', serif; font-style:italic; font-size:19px;
+    color:var(--moss); max-width:44ch; border-left:3px solid var(--terracotta); padding-left:18px;
+  }
+  .journey-media{margin-top:44px; display:grid; gap:16px;}
+  @media (min-width:768px){ .journey-media{grid-template-columns:repeat(3,1fr);} }
+
+  /* ---------- BDS ---------- */
+  .realestate{background:var(--moss-tint);}
+  .pillars{display:grid; gap:18px; margin-top:36px;}
+  @media (min-width:768px){ .pillars{grid-template-columns:repeat(3,1fr);} }
+  .pillar{
+    background:var(--cream); border-radius:var(--radius-card);
+    padding:26px 24px; border:1px solid var(--line);
+  }
+  .pillar .num{font-family:'JetBrains Mono', monospace; color:var(--terracotta); font-size:13px; letter-spacing:0.08em;}
+  .pillar h3{font-size:19px; margin:10px 0 10px;}
+  .pillar p{font-size:14.5px; color:var(--warm-gray); margin:0;}
+
+  .credibility{
+    margin-top:40px; padding:26px; background:var(--cream);
+    border-radius:var(--radius-card); border:1px solid var(--line);
+  }
+  .credibility .eyebrow{margin-bottom:10px; display:block;}
+
+  .market-updates{margin-top:44px;}
+  .update-row{
+    display:flex; justify-content:space-between; gap:20px;
+    padding:18px 0; border-bottom:1px solid var(--line);
+    font-size:15.5px; text-decoration:none;
+  }
+  a.update-row:hover span:first-child{color:var(--terracotta);}
+  .update-row:first-child{border-top:1px solid var(--line);}
+  .update-row .u-tag{font-family:'JetBrains Mono', monospace; font-size:12px; color:var(--warm-gray); white-space:nowrap;}
+
+  .re-grid{margin-top:48px; display:grid; gap:16px;}
+  @media (min-width:768px){ .re-grid{grid-template-columns:repeat(3,1fr);} }
+
+  /* ---------- RESTAURANT ---------- */
+  .restaurant-zone{background:var(--cream-warm);}
+  .restaurant-zone .pillar,
+  .restaurant-zone .credibility,
+  .restaurant-zone .media-slot{border-radius:28px;}
+  .r-highlights{display:grid; gap:14px; margin-top:34px;}
+  @media (min-width:768px){ .r-highlights{grid-template-columns:repeat(3,1fr);} }
+  .r-chip{
+    background:var(--restaurant-tint); color:var(--ink);
+    border-radius:20px; padding:20px; font-size:15px;
+  }
+  .r-chip b{display:block; font-family:'Fraunces',serif; font-size:17px; color:var(--restaurant); margin-bottom:6px;}
+  .r-media{margin-top:44px; display:grid; gap:16px; align-items:center;}
+  @media (min-width:768px){ .r-media{grid-template-columns:1.1fr 1.1fr 0.65fr;} }
+
+  /* ---------- LIFESTYLE ---------- */
+  .lifestyle{background:var(--cream);}
+  .life-grid{display:grid; gap:20px; margin-top:36px;}
+  @media (min-width:768px){ .life-grid{grid-template-columns:repeat(3,1fr);} }
+  .life-card{padding:6px 0;}
+  .life-card .eyebrow{display:block; margin-bottom:10px;}
+  .life-card p{font-size:15px; color:var(--ink); opacity:0.85;}
+  .journal-note{
+    margin-top:40px; background:var(--moss); color:var(--cream);
+    border-radius:var(--radius-soft); padding:30px 28px;
+    display:flex; flex-direction:column; gap:14px;
+  }
+  @media (min-width:700px){ .journal-note{flex-direction:row; align-items:center; justify-content:space-between;} }
+  .journal-note h3{color:var(--cream); font-size:21px;}
+  .journal-note a{
+    background:var(--cream); color:var(--moss); padding:11px 20px; border-radius:999px;
+    text-decoration:none; font-weight:700; font-size:14px; white-space:nowrap;
+  }
+
+  /* ---------- TESTIMONIALS ---------- */
+  .testimonials{background:var(--moss-tint);}
+  .test-grid{display:grid; gap:18px; margin-top:36px;}
+  @media (min-width:768px){ .test-grid{grid-template-columns:1fr 1fr;} }
+  .test-card{
+    background:var(--cream); border-radius:var(--radius-card);
+    padding:26px; border:1px solid var(--line);
+  }
+  .test-card .quote{font-family:'Fraunces', serif; font-style:italic; font-size:18px; color:var(--ink); margin:14px 0;}
+  .test-card .who{font-family:'JetBrains Mono', monospace; font-size:12.5px; color:var(--warm-gray);}
+  .note-box{
+    margin-top:28px; font-size:14px; color:var(--warm-gray);
+    border-left:3px solid var(--terracotta); padding-left:16px;
+  }
+
+  /* ---------- FINAL CTA ---------- */
+  .cta-final{background:var(--ink); color:var(--cream);}
+  .cta-final .section-head p.lede{color:rgba(250,246,238,0.7);}
+  .cta-final h2{color:var(--cream);}
+  .cta-split{display:grid; gap:20px; margin-top:20px;}
+  @media (min-width:768px){ .cta-split{grid-template-columns:1fr 1fr;} }
+  .cta-block{
+    border-radius:var(--radius-soft); padding:32px 28px;
+  }
+  .cta-block.re{background:rgba(250,246,238,0.06); border:1px solid rgba(250,246,238,0.16);}
+  .cta-block.rest{background:rgba(210,105,30,0.12); border:1px solid rgba(210,105,30,0.3);}
+  .cta-block h3{color:var(--cream); font-size:22px; margin-bottom:12px;}
+  .cta-block p{color:rgba(250,246,238,0.75); font-size:15px; margin-bottom:20px;}
+  .cta-block .btn-primary{background:var(--terracotta);}
+  .cta-block.rest .btn-primary{background:var(--restaurant);}
+
+  footer{background:var(--ink); color:rgba(250,246,238,0.55); padding:30px 0 40px; font-size:13.5px;}
+  .footer-row{display:flex; flex-wrap:wrap; gap:14px; justify-content:space-between; align-items:center;}
+  footer a{color:rgba(250,246,238,0.85); text-decoration:none; margin-right:16px;}
+  .footer-tag{font-family:'JetBrains Mono', monospace; letter-spacing:0.04em;}
+
+  /* ---------- Ảnh & video thật ---------- */
+  .site-photo{width:100%; object-fit:cover; border-radius:var(--radius-card); display:block;}
+  .ratio-43{aspect-ratio:4/3;}
+  .site-video{width:100%; border-radius:var(--radius-card); display:block; background:#0e1622; aspect-ratio:16/9;}
+  .hero-photo{aspect-ratio:4/3; border-radius:var(--radius-soft); box-shadow:0 18px 44px -18px rgba(22,35,58,0.35);}
+  .journey-media{align-items:center;}
+  .cred-grid{display:grid; gap:22px; align-items:center;}
+  .cred-photo{aspect-ratio:3/2;}
+  @media (min-width:768px){ .cred-grid{grid-template-columns:1.15fr 0.85fr;} }
+  .r-photo-tall{aspect-ratio:3/4; object-position:center 35%;}
+  .life-photo{aspect-ratio:4/5; object-position:center 30%; margin-bottom:16px;}
+
+  /* reveal on scroll */
+  .reveal{opacity:0; transform:translateY(16px); transition:opacity .6s ease, transform .6s ease;}
+  .reveal.is-visible{opacity:1; transform:none;}
+</style>
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="nav-inner">
+    <a class="logo" href="#trang-chu">
+      <span class="logo-mark">KAD</span>
+      Khuất Anh Dũng
+    </a>
+    <nav class="links">
+      <a href="#hanh-trinh">Hành trình</a>
+      <a href="#bat-dong-san">Bất động sản</a>
+      <a href="#nha-hang">DŨNG URAA</a>
+      <a href="#loi-song">Lối sống</a>
+      <a href="blog/">Bài viết</a>
+      <a href="#lien-he">Liên hệ</a>
+    </nav>
+    <a class="nav-cta" href="https://zalo.me/84869668638" target="_blank" rel="noopener">Nhắn Zalo</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Mở menu" aria-expanded="false"><span></span></button>
+  </div>
+  <div class="mobile-panel" id="mobilePanel">
+    <a href="#hanh-trinh">Hành trình</a>
+    <a href="#bat-dong-san">Bất động sản</a>
+    <a href="#nha-hang">DŨNG URAA</a>
+    <a href="#loi-song">Lối sống</a>
+    <a href="blog/">Bài viết</a>
+    <a href="#lien-he">Liên hệ</a>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="trang-chu">
+  <div class="container">
+    <div class="reveal">
+      <span class="eyebrow">Sống tử tế · Kiếm tiền hạnh phúc · Cho đi giá trị</span>
+      <h1>Người bạn đồng hành bất động sản Nha Trang — sống thật, làm thật.</h1>
+      <p class="sub">Chuyên viên môi giới BĐS tại New City Group, Top 100 Nhà môi giới BĐS tiêu biểu Việt Nam 2026 — đồng thời là chủ nhà hàng bia hơi Hà Nội DŨNG URAA, chồng, cha của 3 đứa trẻ, và một người tin vào sự tử tế trong công việc lẫn cuộc sống.</p>
+      <div class="hero-badges">
+        <span class="badge">Top 100 Môi giới BĐS Việt Nam 2026 · VARS</span>
+        <span class="badge">Chủ DŨNG URAA – Bia hơi Hà Nội</span>
+        <span class="badge">Gắn bó Nha Trang từ 2014</span>
+      </div>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="#bat-dong-san">Tư vấn đầu tư BĐS</a>
+        <a class="btn btn-outline" href="#nha-hang">Ghé DŨNG URAA</a>
+      </div>
+    </div>
+    <img class="reveal site-photo hero-photo" src="media/01-chan-dung.jpg" alt="Khuất Anh Dũng trên bãi biển Nha Trang">
+  </div>
+</section>
+
+<!-- ================= HÀNH TRÌNH ================= -->
+<section class="journey" id="hanh-trinh">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">01 · Hành trình</span>
+      <h2>Vấp ngã, đứng dậy, đi tiếp</h2>
+      <p class="lede">Không phải vì thích mạo hiểm — mà vì tin rằng mọi thứ chỉ vững khi mình chủ động chọn.</p>
+    </div>
+
+    <ul class="timeline reveal">
+      <li class="t-item">
+        <span class="t-num">01</span>
+        <h3>2009–2014 — Kỹ sư công trình tại Hà Nội</h3>
+        <p>Tốt nghiệp ngành kỹ thuật điện, 5 năm làm cán bộ kỹ thuật công trình cho nhà thầu — nền tảng hiểu công trình từ bản vẽ đến thực tế thi công.</p>
+      </li>
+      <li class="t-item">
+        <span class="t-num">02</span>
+        <h3>2014–2023 — Gần 10 năm tại Vingroup</h3>
+        <p>Cán bộ quản lý Ban Quản lý Dự án, một trong những cán bộ lãnh đạo trẻ của tập đoàn — hiểu chủ đầu tư và dự án từ bên trong. Cũng từ 2014, Dũng bắt đầu vào Nha Trang làm việc và gắn bó với vùng đất này.</p>
+      </li>
+      <li class="t-item">
+        <span class="t-num">03</span>
+        <h3>2021–2022 — Vấp ngã đầu tư</h3>
+        <p>Cùng nhóm nhà đầu tư Hà Nội xuống tiền vào bất động sản Khánh Hòa lúc thị trường sôi động. Cuối 2022, thị trường đóng băng — vì dùng đòn bẩy tài chính khi chưa đủ kiến thức và phụ thuộc quá nhiều vào môi giới, Dũng trả giá bằng chính tiền của mình.</p>
+      </li>
+      <li class="t-item">
+        <span class="t-num">04</span>
+        <h3>Cuối 2022 — Rời Vingroup, khởi nghiệp bia hơi Hà Nội</h3>
+        <p>Cùng một số đồng nghiệp rời tập đoàn, rẽ sang một ngành hoàn toàn mới: bia hơi Hà Nội tại Nha Trang. Cũng trong năm 2022, cả gia đình chuyển hẳn vào Nha Trang lập nghiệp.</p>
+      </li>
+      <li class="t-item">
+        <span class="t-num">05</span>
+        <h3>Hôm nay — Môi giới BĐS đầu tư &amp; DŨNG URAA</h3>
+        <p>Vào nghề môi giới từ chính bài học vấp ngã của mình. Tháng 6/2026, được Hội Môi giới BĐS Việt Nam (VARS) vinh danh Top 100 Nhà môi giới BĐS tiêu biểu Việt Nam.</p>
+      </li>
+    </ul>
+
+    <div class="story-body reveal">
+      <p>Sinh năm 1988 tại Phúc Thọ, Hà Nội, Khuất Anh Dũng tốt nghiệp ngành kỹ thuật điện và bắt đầu bằng con đường quen thuộc của một kỹ sư: 5 năm làm cán bộ kỹ thuật công trình cho nhà thầu, rồi gần 10 năm tại <strong>Vingroup</strong> ở vị trí cán bộ quản lý Ban Quản lý Dự án — một trong những cán bộ lãnh đạo trẻ của tập đoàn.</p>
+      <p>Năm 2014, công việc đưa Dũng vào Nha Trang. Khí hậu dễ chịu, con người thân thiện, chi phí hợp lý — nhưng quan trọng nhất, đây là nơi anh nhìn thấy cơ hội để phát triển và một cuộc sống tốt hơn cho gia đình.</p>
+      <p>Rồi đến bài học đắt nhất đời. Năm 2021, thị trường sôi động, Dũng cùng nhóm nhà đầu tư Hà Nội xuống tiền vào bất động sản Khánh Hòa. Cuối 2022, thị trường đóng băng. Dùng đòn bẩy tài chính khi chưa đủ kiến thức, phụ thuộc quá nhiều vào lời môi giới — anh chịu thiệt hại nặng, bằng tiền thật của chính mình. Cũng từ đó, Dũng hiểu một điều mà không sách vở nào dạy: <strong>nhà đầu tư mất tiền vì thiếu thông tin và thiếu một người đồng hành nói thật.</strong></p>
+      <p>Cuối 2022, anh cùng một số đồng nghiệp rời Vingroup, rẽ sang một ngành hoàn toàn mới: bia hơi Hà Nội tại Nha Trang. Hệ thống URAA có lúc phát triển tới 6 cơ sở khắp Nha Trang, Cam Ranh, Buôn Ma Thuột — rồi sau hơn 4 năm, anh em giải tán hệ thống, mỗi người một hướng. Vợ chồng Dũng giữ lại quán đầu tiên, "cái nôi khởi nghiệp", và đặt cho nó cái tên mới: <strong>DŨNG URAA</strong>.</p>
+      <p>Còn nghề môi giới bất động sản? Dũng bước vào nghề không phải từ hào quang thị trường, mà từ chính cú vấp ngã của mình — với một suy nghĩ duy nhất: <strong>trở thành người mà khách hàng thực sự muốn làm việc cùng</strong>, giúp họ tránh những sai lầm anh đã trả giá. Tháng 6/2026, anh được VARS vinh danh Top 100 Nhà môi giới BĐS tiêu biểu Việt Nam.</p>
+      <p>Ngày nay, sáng anh có thể ngồi phân tích pháp lý một dự án cho nhà đầu tư ở Hà Nội, chiều đứng ở quán kiểm tra từng vại bia cho khách quen ở Nha Trang, tối về nhà với vợ con. Hai công việc tưởng như không liên quan — thực ra chung một gốc: <strong>làm thật, sống tử tế, ai cần giúp thì giúp — không giúp được thì tìm người giúp.</strong></p>
+    </div>
+
+    <p class="story-transition reveal">"Tôi không bán những sản phẩm mà bản thân mình không tin và không yêu."</p>
+
+    <div class="journey-media reveal">
+      <img class="site-photo ratio-43" src="media/02-ky-su.jpg" alt="Dũng thời làm kỹ sư công trình" loading="lazy">
+      <img class="site-photo ratio-43" src="media/03-gia-dinh.jpg" alt="Gia đình Dũng những ngày đầu vào Nha Trang" loading="lazy">
+      <div class="video-embed"><iframe src="https://www.youtube-nocookie.com/embed/IDpALXa16ao" title="Khuất Anh Dũng tự kể chuyện" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BẤT ĐỘNG SẢN ================= -->
+<section class="realestate" id="bat-dong-san">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">02 · Bất động sản</span>
+      <h2>Chuyên viên môi giới BĐS đầu tư — New City Group</h2>
+      <p class="lede">Dũng tập trung vào bất động sản dự án cao cấp, nhà phố và sản phẩm đầu tư tại Nha Trang, Cam Lâm, Cam Ranh và Bắc Vân Phong — làm việc trực tiếp với nhà đầu tư Hà Nội, TP.HCM và Việt kiều đang tìm một điểm đến đầu tư dài hạn tại Khánh Hòa.</p>
+    </div>
+
+    <div class="pillars reveal">
+      <div class="pillar">
+        <span class="num">01</span>
+        <h3>Tư vấn đầu tư dự án</h3>
+        <p>Phân tích dòng tiền, pháp lý, tiềm năng theo hạ tầng thật — cao tốc, sân bay Cam Ranh, quy hoạch vùng.</p>
+      </div>
+      <div class="pillar">
+        <span class="num">02</span>
+        <h3>Pháp lý &amp; minh bạch</h3>
+        <p>Hỗ trợ kiểm tra sổ đỏ/sổ hồng, quy hoạch, tiến độ pháp lý dự án trước khi khách xuống tiền.</p>
+      </div>
+      <div class="pillar">
+        <span class="num">03</span>
+        <h3>Đồng hành dài hạn</h3>
+        <p>Không chỉ một giao dịch — theo sát khách hàng qua nhiều chu kỳ đầu tư.</p>
+      </div>
+    </div>
+
+    <div class="credibility reveal">
+      <div class="cred-grid">
+        <div>
+          <span class="eyebrow">Căn cứ &amp; số liệu thật</span>
+          <div>
+            <span class="data-tag">Top 100 Nhà môi giới BĐS tiêu biểu Việt Nam 2026 · VARS Awards</span>
+            <span class="data-tag">Chứng chỉ hành nghề môi giới BĐS số KH-25.00079 · Sở Xây dựng Khánh Hòa</span>
+            <span class="data-tag">Hơn 10 giao dịch trong 12 tháng gần nhất</span>
+            <span class="data-tag">"Siêu sao Dự án" New City 12/2025 · Best Team 2024–2025</span>
+            <span class="data-tag">Nền tảng kỹ sư + gần 10 năm quản lý dự án tại Vingroup</span>
+            <span class="data-tag">Khu vực: Nha Trang · Cam Lâm · Cam Ranh · Bắc Vân Phong</span>
+          </div>
+        </div>
+        <img class="site-photo cred-photo" src="media/10-vars-top100.jpg" alt="Khuất Anh Dũng nhận vinh danh Top 100 Nhà môi giới BĐS tiêu biểu Việt Nam 2026 tại Ngày hội Môi giới BĐS Việt Nam" loading="lazy">
+      </div>
+    </div>
+
+    <div class="market-updates reveal">
+      <span class="eyebrow">Bài viết mới</span>
+      <a class="update-row" href="blog/diem-tin-bds-khanh-hoa-tuan-09-08.html"><span>Điểm tin BĐS Khánh Hòa tuần: 19/8 khởi công loạt dự án 20.000 tỷ</span><span class="u-tag">09/08/2026</span></a>
+      <a class="update-row" href="blog/tu-6-quan-con-1-quan.html"><span>Từ 6 quán còn 1 quán: thu gọn không phải thất bại — là chọn sống sót</span><span class="u-tag">08/08/2026</span></a>
+      <a class="update-row" href="blog/charmora-city-7-cau-hoi.html"><span>Charmora City Nha Trang: tôi trả lời 7 câu khách hỏi nhiều nhất</span><span class="u-tag">07/08/2026</span></a>
+      <a class="update-row" href="blog/bang-gia-dat-2026-khanh-hoa.html"><span>Bảng giá đất 2026 Khánh Hòa: 3 điều cần hiểu trước khi tin "giá nhà nước"</span><span class="u-tag">06/08/2026</span></a>
+      <div style="margin-top:20px;"><a href="blog/" style="font-weight:700; color:var(--terracotta); text-decoration:none;">Xem tất cả bài viết →</a></div>
+    </div>
+
+    <div class="re-grid reveal">
+      <img class="site-photo ratio-43" src="media/05-khao-sat.jpg" alt="Dũng dẫn khách khảo sát thực địa dự án" loading="lazy">
+      <img class="site-photo ratio-43" src="media/06-phap-ly.jpg" alt="Dũng cùng khách hàng xem hồ sơ pháp lý" loading="lazy">
+      <img class="site-photo ratio-43" src="media/07-thuc-dia.jpg" alt="Toàn cảnh khu vực dự án khi đi khảo sát thực tế" loading="lazy">
+    </div>
+
+    <div class="hero-ctas reveal" style="margin-top:40px;">
+      <a class="btn btn-primary" href="#lien-he">Đặt lịch tư vấn đầu tư qua Zalo</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= NHÀ HÀNG DŨNG URAA ================= -->
+<section class="restaurant-zone" id="nha-hang">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">03 · DŨNG URAA</span>
+      <h2>Bia hơi Hà Nội giữa lòng Nha Trang</h2>
+      <p class="lede">Khởi nghiệp năm 2022 cùng những người anh em rời Vingroup, hệ thống URAA từng có 6 cơ sở khắp Nha Trang, Cam Ranh, Buôn Ma Thuột. Sau nhiều biến động, vợ chồng Dũng giữ lại quán đầu tiên — "cái nôi khởi nghiệp" — tự tay vận hành và đặt tên mới: DŨNG URAA. Bia hơi Hà Nội đúng vị, món Bắc nấu như ở nhà.</p>
+    </div>
+
+    <div class="r-highlights reveal">
+      <div class="r-chip"><b>Bia hơi tươi mỗi ngày</b>Rót đúng kiểu vỉa hè Hà Nội — ly bia hơi chỉ 14.000đ, có cả ca 2 lít, tháp 3 lít cho hội đông.</div>
+      <div class="r-chip"><b>Món Bắc chính hiệu</b>Dồi sụn heo chiên, cá kìm chiên giòn, trâu gác bếp, lườn ngỗng xông khói, nem bùi Bắc Ninh, lẩu riêu cua bắp bò...</div>
+      <div class="r-chip"><b>Không khí thật</b>Đông vui, tái hiện bia hơi vỉa hè Hà Nội thu nhỏ giữa Nha Trang — mở cửa 10h–23h hằng ngày.</div>
+    </div>
+
+    <div class="r-media reveal">
+      <img class="site-photo ratio-43" src="media/08-quan-dong.jpg" alt="Không gian nhà hàng DŨNG URAA" loading="lazy">
+      <div class="video-embed"><iframe src="https://www.youtube-nocookie.com/embed/_OLgDbWd0Fw" title="Không khí quán DŨNG URAA" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+      <img class="site-photo r-photo-tall" src="media/12-rot-bia.jpg" alt="Dũng đứng quầy rót bia hơi Hà Nội tại DŨNG URAA" loading="lazy">
+    </div>
+
+    <div class="hero-ctas reveal" style="margin-top:40px;">
+      <a class="btn btn-primary" href="https://zalo.me/84869668638" target="_blank" rel="noopener">Đặt bàn qua Zalo — 0869 668 638</a>
+      <a class="btn btn-outline" href="https://www.google.com/maps/search/?api=1&amp;query=D%C5%A8NG+URAA+bia+h%C6%A1i+H%C3%A0+N%E1%BB%99i+VCN+Ph%C6%B0%E1%BB%9Bc+Long+2+Nha+Trang" target="_blank" rel="noopener">Chỉ đường Google Maps</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= LỐI SỐNG ================= -->
+<section class="lifestyle" id="loi-song">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">04 · Lối sống</span>
+      <h2>Sống tử tế, kiếm tiền hạnh phúc, cho đi giá trị</h2>
+      <p class="lede">Con người phía sau hai công việc — không bán hàng ở đây, chỉ là những gì có thật mỗi ngày.</p>
+    </div>
+
+    <div class="life-grid reveal">
+      <div class="life-card">
+        <img class="site-photo life-photo" src="media/11-the-thao.jpg" alt="Khuất Anh Dũng về đích Ironman 70.3 Đà Nẵng 2025" loading="lazy">
+        <span class="eyebrow">Thể thao</span>
+        <p>Nhiều huy chương full marathon, hoàn thành Ironman 70.3 Đà Nẵng 2025, thành viên CLB bơi biển KOS và Nha Trang Runner. Tháng 7/2026: cự ly trail đầu đời — City Trail Nha Trang 35km. "Một ngày không vận động là thấy khó chịu."</p>
+      </div>
+      <div class="life-card">
+        <span class="eyebrow">Gia đình</span>
+        <p>3 đứa con, ưu tiên dành thời gian cho vợ con dù công việc bận rộn với cả hai mảng.</p>
+      </div>
+      <div class="life-card">
+        <span class="eyebrow">Giá trị sống</span>
+        <p>Ba câu Dũng tự hỏi mỗi ngày: "Có cách nào tốt hơn hay không?" — "Mình có làm ảnh hưởng đến ai hay không?" — "Mình đã làm được gì để giúp người khác hay không?"</p>
+      </div>
+    </div>
+
+    <div class="journal-note reveal">
+      <div>
+        <h3>Nhật ký sống tích cực</h3>
+        <p style="color:rgba(250,246,238,0.75); margin:6px 0 0; max-width:46ch;">Một buổi chạy, một bài học từ công việc, một khoảnh khắc gia đình — cập nhật định kỳ, không cần hằng ngày.</p>
+      </div>
+      <a href="https://www.facebook.com/dungka" target="_blank" rel="noopener">Theo dõi trên Facebook</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TESTIMONIALS ================= -->
+<section class="testimonials" id="danh-gia">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">05 · Đánh giá thật</span>
+      <h2>Khách hàng nói gì</h2>
+    </div>
+
+    <div class="test-grid reveal">
+      <div class="test-card">
+        <span class="data-tag">DŨNG URAA · ★★★★★ trên Google Maps</span>
+        <p class="quote">"Quán món khá ngon, đặc biệt là món giò heo giả cầy và lẩu gà lá é!! Và trên cả tuyệt vời là Bia hơi chuẩn Hà Nội, không gian rộng rãi. Sẽ ghé lại lần nữa."</p>
+        <p class="who">— BĐS Oanh Nguyen · <a href="https://maps.app.goo.gl/Kui1K7gBBbrT46jv6" target="_blank" rel="noopener">Xem trên Google Maps</a></p>
+      </div>
+      <div class="test-card">
+        <span class="data-tag">Khách quốc tế · ★★★★★ trên Google Maps</span>
+        <p class="quote">"Mọi thứ đều tuyệt vời! Tôi khuyên bạn nên thử."</p>
+        <p class="who">— Aleksandr Litovchenko · khách Nga, dịch từ bản gốc · <a href="https://maps.app.goo.gl/hAMHvkHzUqfU9SRb8" target="_blank" rel="noopener">Xem trên Google Maps</a></p>
+      </div>
+    </div>
+    <p class="note-box reveal">Đánh giá công khai từ khách thật trên Google Maps — bấm từng liên kết để xác minh. Cảm nhận của khách hàng bất động sản sẽ được bổ sung khi khách đồng ý chia sẻ.</p>
+  </div>
+</section>
+
+<!-- ================= CTA CUỐI ================= -->
+<section class="cta-final" id="lien-he">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow" style="color:rgba(250,246,238,0.5);">Liên hệ</span>
+      <h2>Chọn điều anh đang cần</h2>
+    </div>
+    <div class="cta-split reveal">
+      <div class="cta-block re">
+        <h3>Đầu tư bất động sản</h3>
+        <p>Đang tìm cơ hội đầu tư tại Nha Trang – Khánh Hòa? Nhắn Zalo để Dũng tư vấn trực tiếp, miễn phí, không ràng buộc.</p>
+        <span class="data-tag" style="color:var(--cream); background:rgba(250,246,238,0.1); border-color:rgba(250,246,238,0.4);">Zalo / Hotline: 0869 668 638</span><br><br>
+        <a class="btn btn-primary" href="https://zalo.me/84869668638" target="_blank" rel="noopener">Nhắn Zalo tư vấn</a>
+      </div>
+      <div class="cta-block rest">
+        <h3>Ghé DŨNG URAA</h3>
+        <p>Bia hơi Hà Nội đúng vị giữa Nha Trang — Số 07D, Tầng 1, Chung cư XH1, VCN Phước Long 2, Đường số 28, KĐT Phước Long, Nam Nha Trang, Khánh Hòa.</p>
+        <span class="data-tag" style="color:var(--cream); background:rgba(210,105,30,0.15); border-color:rgba(210,105,30,0.5);">Mở cửa 10h–23h · 0869 668 638 / 0869 668 639</span><br><br>
+        <a class="btn btn-primary" href="https://www.google.com/maps/search/?api=1&amp;query=D%C5%A8NG+URAA+bia+h%C6%A1i+H%C3%A0+N%E1%BB%99i+VCN+Ph%C6%B0%E1%BB%9Bc+Long+2+Nha+Trang" target="_blank" rel="noopener">Chỉ đường Google Maps</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-row">
+    <div>
+      <a href="https://www.facebook.com/dungka" target="_blank" rel="noopener">Facebook</a><a href="https://zalo.me/84869668638" target="_blank" rel="noopener">Zalo</a><a href="https://youtube.com/@khuatanhdung" target="_blank" rel="noopener">YouTube</a><a href="https://www.tiktok.com/@dungbdsnhatrang" target="_blank" rel="noopener">TikTok</a>
+    </div>
+    <span class="footer-tag">khuatanhdung.com — Sống tử tế · Kiếm tiền hạnh phúc · Cho đi giá trị</span>
+  </div>
+</footer>
+
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const mobilePanel = document.getElementById('mobilePanel');
+  menuBtn.addEventListener('click', () => {
+    const open = mobilePanel.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  mobilePanel.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    mobilePanel.classList.remove('open');
+    menuBtn.setAttribute('aria-expanded', 'false');
+  }));
+
+  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (!prefersReduced && 'IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('is-visible'); io.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  } else {
+    document.querySelectorAll('.reveal').forEach(el => el.classList.add('is-visible'));
+  }
+</script>
+
+</body>
+</html>
