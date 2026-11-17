@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://khuatanhdung.com/</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -14,7 +14,7 @@
   </url>
   <url>
     <loc>https://khuatanhdung.com/blog/</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
@@ -651,6 +651,12 @@
   <url>
     <loc>https://khuatanhdung.com/blog/55-km-lam-duoc-ke-hoach-moi-ngay-thi-khong-doi-cach-do-ky-luat.html</loc>
     <lastmod>2026-11-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://khuatanhdung.com/blog/da-co-quy-hoach-roi-hoi-lai-quyet-dinh-so-may-ngay-nao.html</loc>
+    <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
